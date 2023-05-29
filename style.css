@@ -1,0 +1,377 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+/* container */
+.container{
+
+    grid-template-rows: 125vh repeat(5, max-content);
+    grid-template-columns: repeat(6 ,1fr);
+    display: grid;
+
+
+}
+
+.header{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-rows:repeat(3, min-content) ;
+    grid-gap: 2rem;
+    background:black url("imeage/bhpcnd3d.bal_560x350.jpg") center no-repeat;
+    background-color: rgb(10, 9, 9);
+    width: 85rem;
+    justify-content: center;
+    align-content: center;
+ 
+}
+
+
+
+
+
+.header1{
+   color: white;
+   justify-self: center;
+
+
+}
+
+.header2{
+    color: white;
+    font-size: 3rem;
+
+}
+
+.header-text{
+
+   color: orange; 
+
+}
+
+
+
+
+
+
+
+.button__btn{
+    padding: 1rem 2rem;
+    color: white;
+     border: 1px solid orange;
+     background: orange;
+     text-align: center;
+     border-radius: 1rem;
+     font-family: sans-serif;
+     font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    justify-self: center;
+}
+
+.button__btn:hover{
+    background: white;
+    color: orange;
+}
+
+.story{
+    grid-column: 1 / -1;
+
+}
+
+.section__titel{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: orange;
+}
+
+.section__titel:before,
+.section__titel:after{
+
+    background: black;
+    content: "";   
+     display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+    height: 2px;
+}
+
+.section__titel:before{
+    right: 1rem;
+    
+}
+
+
+.section__titel:after{
+    left: 1rem;
+
+}
+
+.story__imeage{
+    display: grid;
+    grid-gap: 2rem;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+}
+
+.image{
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.service{
+    grid-column: 2/6;
+
+}
+
+.section__servisec{
+    display: grid;
+    grid-template-rows: repeat(2, 16rem);
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    grid-gap: 2rem;
+    
+}
+
+.service__image{
+    width: 100%;
+    height: 12rem;
+    border-top-right-radius: 4rem;
+    border-bottom-left-radius: 4rem;
+
+}
+
+.servic__text{
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.servic__textow{
+
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.recerve{
+    grid-column: 1 / -1;
+}
+
+.recerve__section{
+    display: grid;
+    grid-template-columns: 14rem repeat(4, 1fr) 7rem;
+    grid-template-rows: 1fr;
+     padding: 2rem;
+     text-align: center;
+     /* background-image: url("imeage/bhpcnd3d.bal_560x350.jpg"); */
+     /* background-repeat: no-repeat; */
+     /* background-position: center; */
+     background: rgb(183, 180, 180)
+
+}
+
+
+.right{
+    background-color: rgba(255, 255, 255, 0.803);
+    grid-column:  2/6;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 2fr;
+    display: grid;
+    justify-content: center;
+    height: 24rem;
+    padding: 1rem;
+
+  
+}
+
+
+.right__box{
+    width: 100%;
+    height: 6rem;
+}
+
+ .left{
+    background-color: black;
+    color: white;
+    grid-column: 3/4;
+    grid-template-rows: 2fr 1fr repeat(3, 0.5fr) 2fr;
+    display: grid;
+     grid-column-start: 1; 
+     grid-column-end: 2;
+     grid-row-start: 1;
+    
+     
+}
+
+.right__image{
+   
+   height: 7rem;
+    border-radius: 100%;
+
+}
+.test_image{
+/* background-image: url("imeage/bhpcnd3d.bal_560x350.jpg"); */
+  border: 100%;
+  height: 5rem;
+  margin-top: -6rem;
+}
+
+
+
+.gallery{
+    grid-column: 1 / -1;
+
+}
+
+
+.gallery__section{
+    display: grid;
+    grid-template-rows: repeat(3, 16rem);
+    grid-template-columns:repeat(3, 1fr) ;
+    padding: 2rem 3rem;
+    grid-gap: 1rem;
+    grid-template-areas: "gallery_1 gallery_1 gallery_2" "gallery_3 gallery_4 gallery_2 " "gallery_3 gallery_5 gallery_5";
+}
+
+
+
+.gallery1{
+
+   grid-area: gallery_1;
+    background-image: url("imeage/roti.jpg");
+  
+}
+
+.gallery2{
+    grid-area: gallery_2;
+    background-image: url("imeage/Untitl1d-600x296-1.png");
+}
+
+
+.gallery3{
+    grid-area: gallery_3;
+background-image: url("imeage/رستوران-نایب.jpeg");
+}
+
+.gallery4{
+    grid-area: gallery_4;
+    background-image: url("imeage/Hamgardi_170716jtx60.jpg");
+}
+
+
+.gallery5{
+    grid-area: gallery_5;
+    background-image: url("imeage/رستوران-سه-گوش-گریل-3.jpg")
+}
+
+
+.image__gallery{
+    width: 100%;
+    border-radius: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    grid-column: 1 / -1;
+    margin: 1rem 0;
+    border-top: 1px solid black;
+    background-color: whitesmoke;
+
+}
+
+.footer_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+  
+
+.text_copy{
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+.footer_titel,.copy{
+    color: orange;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+li{
+    margin-top: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.fa{
+    margin-right: 10px;
+}
+a{
+    text-decoration-line: none;
+color: black;
+    
+}
+.fa-telegram{
+    color: rgb(9, 126, 250);
+}
+.fa-instagram{
+    color: red;
+}
+.fa-whatsapp{color:green}
+
+
+
+
+
+@media screen and (max-width: 670px){
+    
+    .image4{
+        grid-column: 2/3;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .image4{
+        grid-column: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header{
+        background-position-x: 10%;
+    }
+    
+}
+
+
+@media screen and (max-width: 1000px){
+  .gallery__section{
+    grid-template-areas: "gallery_1 gallery_1 gallery_2"  "gallery_3 gallery_4  gallery_5" "gallery_5 gallery_5 gallery_5";
+  }
+}
+
+
+@media screen and (max-width:600px){
+    .gallery__section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 280px); 
+        grid-template-areas: "gallery_1 gallery_1" "gallery_3 gallery_2" "gallery_4  gallery_4"  "gallery_5 gallery_5"
+    }
+    
+}
